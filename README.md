@@ -1,4 +1,4 @@
-# Ensaya:An ensemble age model for prediction of chronological age in adolescents and young adults
+# Ensaya: An ensemble age model for prediction of chronological age in adolescents and young adults
 
 This repository provides an R-based workflow to run **Ensaya**, an ensamble epigenetic age estimator.
 
@@ -39,11 +39,11 @@ run_clocks(input_file, out_file)
 ### Example
 
 ```r
-source("ensaya.R")
+source("Ensaya.R")
 
 run_clocks(
-  input_file = "data/example_data.csv",
-  out_file = "results/ensaya_results.csv"
+  input_file = "input.csv",
+  out_file = "ensaya_results.csv"
 )
 ```
 
