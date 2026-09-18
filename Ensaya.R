@@ -240,7 +240,7 @@ run_paya <- function(input_file) {
   
   as.matrix(sub) -> sub
   storage.mode(sub) <- "numeric"
-  sub[is.na(sub)] <- 0
+  sub[is.na(sub)] <- imputation[rownames(sub), "mean"][row(sub)[is.na(sub)]]
   
   colSums(sub * coeff$Coefficient) + intercept -> pred
   
